@@ -10,15 +10,33 @@ import "./styles.css";
 
 const App = ({ data, dataLine }) => {
   console.log(dataLine[0].data.length - 1);
-  console.log(dataLine);
+  console.log(dataLine[0].data[3].x);
+
+  for (let i = 0; i < data.length; i++) {
+    console.log(data[i].country);
+  }
+
+  let startPoint;
+  for (let i = 0; i < data.length; i++) {
+    for (let j = 0; j < dataLine.length; j++) {
+      if (data[i].country === dataLine[j].data[i].x) {
+        startPoint = i;
+        //console.log(startPoint)
+        return null;
+      }
+    }
+  }
+  console.log(startPoint);
+
   const dataX = [0.52, 1.453, 2.386, 3.319, 4.252, 5.185, 6.118, 7.051, 7.984];
+  console.log(dataX[startPoint]);
+  for (let i = 0; i < dataLine.length; i++) {
+    dataLine[i].data.forEach((dat, index) => {
+      dat.x = dataX[index];
+    });
+    dataLine[i].data.push({ x: 8.987, y: null });
+  }
 
-  dataLine[0].data.forEach((dat, index) => {
-    dat.x = dataX[index];
-  });
-
-  dataLine[0].data.push({ x: 8.987, y: null });
-  console.log(dataLine[0].data);
   const tickTheme = {
     textColor: "#eee"
   };
