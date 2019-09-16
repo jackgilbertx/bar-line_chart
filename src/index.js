@@ -8,52 +8,32 @@ const dataLine = [
     color: "hsl(302, 70%, 50%)",
     data: [
       {
-        x: "plane",
+        x: 0,
         y: 50
       },
       {
-        x: "helicopter",
+        x: 1,
         y: 55
       },
       {
-        x: "boat",
+        x: 2,
         y: 70
       },
       {
-        x: "train",
+        x: 3,
         y: 75
       },
       {
-        x: "subway",
+        x: 3,
         y: 80
       },
       {
-        x: "bus",
+        x: 4,
         y: 90
       },
       {
-        x: "car",
+        x: 5,
         y: 95
-      },
-      {
-        x: "moto",
-        y: 115
-      },
-      {
-        x: "bicycle",
-        y: 110
-      },
-      {
-        x: "horse",
-        y: 115
-      },
-      {
-        x: "skateboard",
-        y: 250
-      },
-      {
-        x: "others",
-        y: 300
       }
     ]
   }
@@ -61,7 +41,7 @@ const dataLine = [
 
 const data = [
   {
-    country: "AD",
+    country: "June 19",
     "hot dog": 88,
     "hot dogColor": "hsl(224, 70%, 50%)",
     burger: 150,
@@ -76,7 +56,7 @@ const data = [
     donutColor: "hsl(277, 70%, 50%)"
   },
   {
-    country: "AE",
+    country: "July 19",
     "hot dog": 61,
     "hot dogColor": "hsl(86, 70%, 50%)",
     burger: 13,
@@ -91,7 +71,7 @@ const data = [
     donutColor: "hsl(39, 70%, 50%)"
   },
   {
-    country: "AF",
+    country: "August 19",
     "hot dog": 57,
     "hot dogColor": "hsl(197, 70%, 50%)",
     burger: 154,
@@ -106,7 +86,7 @@ const data = [
     donutColor: "hsl(357, 70%, 50%)"
   },
   {
-    country: "AG",
+    country: "September 19",
     "hot dog": 3,
     "hot dogColor": "hsl(255, 70%, 50%)",
     burger: 116,
@@ -121,7 +101,7 @@ const data = [
     donutColor: "hsl(298, 70%, 50%)"
   },
   {
-    country: "AI",
+    country: "October 19",
     "hot dog": 64,
     "hot dogColor": "hsl(16, 70%, 50%)",
     burger: 94,
@@ -136,7 +116,7 @@ const data = [
     donutColor: "hsl(301, 70%, 50%)"
   },
   {
-    country: "AL",
+    country: "November 19",
     "hot dog": 31,
     "hot dogColor": "hsl(123, 70%, 50%)",
     burger: 18,
@@ -151,7 +131,7 @@ const data = [
     donutColor: "hsl(173, 70%, 50%)"
   },
   {
-    country: "AM",
+    country: "December 19",
     "hot dog": 119,
     "hot dogColor": "hsl(229, 70%, 50%)",
     burger: 59,
@@ -166,6 +146,7 @@ const data = [
     donutColor: "hsl(333, 70%, 50%)"
   }
 ];
+
 ReactDOM.render(
   <App dataLine={dataLine} data={data} />,
   document.getElementById("root")

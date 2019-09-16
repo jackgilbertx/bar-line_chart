@@ -9,6 +9,7 @@
   top: 0px;
   left: 0px;
   z-index: 1;
+  background: #333;
 }
 .line {
   height: 400px;
@@ -17,4 +18,14 @@
   top: 0px;
   left: 0px;
   z-index: 2;
+}
+
+.title {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  font-weight: bold;
+  font-family: arial;
+  transform: translateX(-50%);
+  color: #eee;
 }
