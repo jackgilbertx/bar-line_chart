@@ -9,6 +9,16 @@ import "./styles.css";
 // you'll often use just a few of them.
 
 const App = ({ data, dataLine }) => {
+  console.log(dataLine[0].data.length - 1);
+  console.log(dataLine);
+  const dataX = [0.52, 1.453, 2.386, 3.319, 4.252, 5.185, 6.118, 7.051, 7.984];
+
+  dataLine[0].data.forEach((dat, index) => {
+    dat.x = dataX[index];
+  });
+
+  dataLine[0].data.push({ x: 8.987, y: null });
+  console.log(dataLine[0].data);
   const tickTheme = {
     textColor: "#eee"
   };

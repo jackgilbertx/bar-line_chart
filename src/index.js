@@ -5,56 +5,56 @@ import App from "./App";
 const dataLine = [
   {
     id: "japan",
-    color: "blue",
+    color: "hsl(50, 70%, 50%)",
     data: [
       //add 0.933 for every x value increment
       {
-        x: 0.52,
+        x: "Apr 19",
         y: 330
       },
       {
-        x: 1.453,
+        x: "May 19",
         y: 329
       },
       {
-        x: 2.386,
+        x: "Jun 19",
         y: 336
       },
       {
-        x: 3.319,
+        x: "Jul 19",
         y: 337
       },
       {
-        x: 4.252,
+        x: "Aug 19",
         y: 338
       },
       {
-        x: 5.185,
+        x: "Sep 19",
         y: 342
       },
       {
-        x: 6.118,
+        x: "Oct 19",
         y: 346
       },
       {
-        x: 7.051,
+        x: "Nov 19",
         y: 355
       },
       {
-        x: 7.984,
+        x: "Dec 19",
         y: 357
-      },
-      {
-        x: 8.987,
-        y: null
       }
+      // {
+      //   x: null,
+      //   y: null
+      // }
     ]
   }
 ];
 
 const data = [
   {
-    country: "April 19",
+    country: "Apr 19",
     "hot dog": 88,
     "hot dogColor": "hsl(224, 70%, 50%)",
     burger: 150,
@@ -76,7 +76,7 @@ const data = [
     kebabColor: "hsl(240, 70%, 50%)"
   },
   {
-    country: "June 19",
+    country: "Jun 19",
     "hot dog": 88,
     "hot dogColor": "hsl(224, 70%, 50%)",
     burger: 150,
@@ -87,7 +87,7 @@ const data = [
     kebabColor: "hsl(240, 70%, 50%)"
   },
   {
-    country: "July 19",
+    country: "Jul 19",
     "hot dog": 61,
     "hot dogColor": "hsl(86, 70%, 50%)",
     burger: 13,
@@ -98,7 +98,7 @@ const data = [
     kebabColor: "hsl(269, 70%, 50%)"
   },
   {
-    country: "August 19",
+    country: "Aug 19",
     "hot dog": 57,
     "hot dogColor": "hsl(197, 70%, 50%)",
     burger: 154,
@@ -109,7 +109,7 @@ const data = [
     kebabColor: "hsl(37, 70%, 50%)"
   },
   {
-    country: "September 19",
+    country: "Sep 19",
     "hot dog": 3,
     "hot dogColor": "hsl(255, 70%, 50%)",
     burger: 116,
@@ -120,7 +120,7 @@ const data = [
     kebabColor: "hsl(359, 70%, 50%)"
   },
   {
-    country: "October 19",
+    country: "Oct 19",
     "hot dog": 64,
     "hot dogColor": "hsl(16, 70%, 50%)",
     burger: 94,
@@ -131,7 +131,7 @@ const data = [
     kebabColor: "hsl(118, 70%, 50%)"
   },
   {
-    country: "November 19",
+    country: "Nov 19",
     "hot dog": 31,
     "hot dogColor": "hsl(123, 70%, 50%)",
     burger: 18,
@@ -142,7 +142,7 @@ const data = [
     kebabColor: "hsl(268, 70%, 50%)"
   },
   {
-    country: "December 19",
+    country: "Dec 19",
     "hot dog": 119,
     "hot dogColor": "hsl(229, 70%, 50%)",
     burger: 59,
