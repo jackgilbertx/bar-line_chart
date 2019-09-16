@@ -124,7 +124,11 @@ const App = ({ data, dataLine }) => {
           data={dataLine}
           theme={tickTheme}
           margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-          xScale={{ type: "point" }}
+          xScale={{
+            type: "linear",
+            min: 0,
+            max: "auto"
+          }}
           yScale={{ type: "linear", stacked: true, min: "auto", max: "auto" }}
           axisTop={null}
           axisRight={{
