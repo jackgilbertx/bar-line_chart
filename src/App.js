@@ -9,28 +9,40 @@ import "./styles.css";
 // you'll often use just a few of them.
 
 const App = ({ data, dataLine }) => {
-  console.log(dataLine[0].data.length - 1);
-  console.log(dataLine[0].data[3].x);
+  // console.log(dataLine[0].data.length - 1);
+  // console.log(dataLine[0].data[3].x);
 
-  for (let i = 0; i < data.length; i++) {
-    console.log(data[i].country);
-  }
+  // for (let i = 0; i < data.length; i++) {
+  //   console.log(data[i].country);
+  // }
 
-  let startPoint;
+  let startPoint = [];
   for (let i = 0; i < data.length; i++) {
     for (let j = 0; j < dataLine.length; j++) {
       if (data[i].country === dataLine[j].data[i].x) {
-        startPoint = i;
+        startPoint.push(i);
+
         //console.log(startPoint)
-        return null;
+        //return null;
       }
     }
   }
+
   console.log(startPoint);
+  const match = startPoint[0];
+
+  //for()
+  // let arrDataLine = dataLine.data.map(d => {
+  //   return d.data.x;
+  // })
+  // console.log(arrDataLine)
+  //https://stackoverflow.com/questions/42070577/javascript-compare-two-arrays-and-return-index-of-matches
+  // console.log(dataLine);
 
   const dataX = [0.52, 1.453, 2.386, 3.319, 4.252, 5.185, 6.118, 7.051, 7.984];
-  console.log(dataX[startPoint]);
-  for (let i = 0; i < dataLine.length; i++) {
+  //console.log(dataX[startPoint]);
+
+  for (let i = match; i < dataLine.length; i++) {
     dataLine[i].data.forEach((dat, index) => {
       dat.x = dataX[index];
     });

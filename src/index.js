@@ -70,7 +70,6 @@ const dataLine = [
   //   ]
   // }
 ];
-
 const data = [
   {
     country: "Apr 19",
